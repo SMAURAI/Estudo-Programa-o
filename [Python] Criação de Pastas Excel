@@ -1,0 +1,11 @@
+from openpyxl import workbook
+
+arquivo = workbook()
+
+planilha = wb.worksheets[0]
+
+planilha.title = "Entradas"
+
+planilha['A1'] = "Banana"
+
+wb.save("c:\Arquivo.xlsx")
